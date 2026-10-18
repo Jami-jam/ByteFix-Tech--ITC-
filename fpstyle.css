@@ -316,10 +316,6 @@ main {
   flex: 1;
 }
 
-.itinfo {
-  flex: 1;
-}
-
 .itinfo h3 {
   font-family: "Courier New";
   font-size: 18px;
@@ -327,6 +323,7 @@ main {
 
 .itinfo p {
   color: #9db2b0;
+  font-size: 14px; }
 }
 
 .itbuy {
@@ -364,6 +361,8 @@ main {
   border-radius: 12px;
   position: sticky;
   min-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart h2 {
@@ -376,6 +375,37 @@ main {
 .cbody {
   padding: 20px;
   font-size: 18px;
+  flex:1;
+}
+
+.cfoot {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px 20px;
+}
+
+.checkoutbtn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2fd4c4;
+  color: #04201d;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cbody button {
+  padding: 4px 10px;
+  border: none;
+  border-radius: 6px;
+  background-color: #04201d;
+  color: #2fd4c4;
+  cursor: pointer;
+}
+
+.checkoutbtn:hover {
+  background-color: #6fe8db;
 }
 
 .sleft:has(#Entry:checked) .item:not(.entry),
@@ -513,4 +543,89 @@ main {
 
 .sendbtn:hover {
   background-color: #6fe8db;
+}
+
+.about {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 24px;
+}
+
+.aleft, .aright {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about h1 {
+  font-family: "Courier New";
+  font-size: 32px;
+}
+
+.abox {
+  padding: 24px;
+  background-color: #081012D1;
+  border: 1px solid #2fd4c4;
+  border-radius: 12px;
+}
+
+.abox p {
+  font-size: 18px;
+}
+
+.abox ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-left: 24px;
+  font-size: 18px;
+}
+
+.abox li::marker {
+  color: #2fd4c4;
+}
+
+.team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+.member {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 20px;
+  background-color: #081012D1;
+  border: 1px solid #2fd4c4;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #04201d;
+  border: 2px solid #2fd4c4;
+}
+
+.member h3 {
+  font-family: "Courier New";
+  font-size: 18px;
+}
+
+  .about {
+    flex-direction: column;
+  }
+  .aleft, .aright {
+    flex: none;
+    width: 100%;
+  }
 }

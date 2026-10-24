@@ -30,16 +30,9 @@ function checkout() {
     alert("Your cart is empty");
     return;
   }
-  let total = 0;
 
-  for (let i = 0; i < cart.length; i++) {
-    total = total + cart[i].price * cart[i].qty;
-  }
-
-  alert("Thank you for your order!\nTotal: ₱" + total.toLocaleString());
-
-  cart = [];
-  showCart();
+  localStorage.setItem("cart", JSON.stringify(cart));
+  window.location.href = "Checkout.html";
 }
 
 function removeItem(i) {

@@ -32,7 +32,7 @@ function checkout() {
   }
 
   localStorage.setItem("cart", JSON.stringify(cart));
-  window.location.href = "Checkout.html";
+  window.location.href = "checkout.html";
 }
 
 function removeItem(i) {

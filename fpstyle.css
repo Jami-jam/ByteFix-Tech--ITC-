@@ -761,3 +761,62 @@ main {
 .submitbtn:hover {
   background-color: #6fe8db;
 }
+
+.receipt {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #081012D1;
+  border: 1px solid #2fd4c4;
+  border-radius: 12px;
+}
+
+.receipt h1 {
+  text-align: center;
+  font-family: "Courier New";
+  font-size: 28px;
+}
+
+.thanks {
+  margin-bottom: 16px;
+  text-align: center;
+  color: #9db2b0;
+}
+
+.receipt h3 {
+  margin: 16px 0 6px;
+  font-family: "Courier New";
+  font-size: 18px;
+  color: #2fd4c4;
+}
+
+.rline {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 4px 0;
+}
+
+.rvalue {
+  text-align: right;
+}
+
+.rtotal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #2fd4c4;
+  font-size: 20px;
+  font-weight: bold;
+  color: #2fd4c4;
+}
+
+.receiptbtns {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}

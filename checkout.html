@@ -98,7 +98,6 @@ Computer & tech services</pre
             <div class="row">
               <div class="field half">
                 <input type="date" id="date" required>
-                <label for="date">Date</label>
               </div>
             </div>
           </div>
@@ -106,6 +105,31 @@ Computer & tech services</pre
           <button type="submit" class="submitbtn">Submit</button>
         </form>
 
+      </div>
+	    <div class="receipt" id="receipt">
+        <h1>Order Receipt</h1>
+        <p class="thanks">Thank you for your order!</p>
+
+        <div class="rline"><span>Order No.</span><span id="rno"></span></div>
+        <div class="rline"><span>Order date</span><span id="rdate"></span></div>
+
+        <h3>Customer</h3>
+        <div class="rline"><span>Name</span><span id="rname"></span></div>
+        <div class="rline"><span>Phone</span><span id="rphone"></span></div>
+        <div class="rline"><span>Address</span><span id="raddress"></span></div>
+
+        <h3>Items</h3>
+        <div id="ritems"></div>
+
+        <div class="rtotal"><span>Total</span><span id="rtotal"></span></div>
+
+        <h3>Payment and delivery</h3>
+        <div class="rline"><span>Payment</span><span>Cash on delivery</span></div>
+        <div class="rline"><span>Preferred delivery date</span><span id="rdelivery"></span></div>
+
+        <div class="receiptbtns">
+          <a class="btn" href="index.html">Back to home</a>
+        </div>
       </div>
     </main>
 
